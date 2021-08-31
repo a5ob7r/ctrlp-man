@@ -7,7 +7,7 @@ CtrlP Extension to find man page.
 ```vim
 :CtrlPMan
 
-# or
+" or
 
-:CtrlPMan <keyword> ...
+:CtrlPMan {keyword} ...
 ```

@@ -36,7 +36,16 @@ function! ctrlp#man#accept(mode, str) abort
   " filetype change to `man`. Maybe filetype plugins have some side effect.
   " These affect when load them on vimrc or different filetype buffer. So load
   " the plugins on new empty buffer to capture the effect inside the buffer.
-  execute 'enew'
+  if a:mode ==# 'v'
+    execute 'vsplit enew'
+  elseif a:mode ==# 'h'
+    execute 'split enew'
+  elseif a:mode ==# 't'
+    execute 'tabnew'
+  else
+    execute 'enew'
+  endif
+
   set filetype=man
 
   execute l:cmd

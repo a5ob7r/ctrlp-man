@@ -47,6 +47,7 @@ function! ctrlp#man#accept(mode, str) abort
   endif
 
   setlocal filetype=man
+  setlocal noswapfile
 
   execute l:cmd
 endfunction

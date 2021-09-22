@@ -46,7 +46,7 @@ function! ctrlp#man#accept(mode, str) abort
     execute 'enew'
   endif
 
-  set filetype=man
+  setlocal filetype=man
 
   execute l:cmd
 endfunction

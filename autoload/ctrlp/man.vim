@@ -7,7 +7,7 @@ let g:loaded_ctrlp_man = 1
 let g:man_var = {
       \ 'init': 'ctrlp#man#init()',
       \ 'accept': 'ctrlp#man#accept',
-      \ 'lname': 'man extension',
+      \ 'lname': 'man',
       \ 'sname': 'man',
       \ 'type': 'line',
       \ }
